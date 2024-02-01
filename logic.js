@@ -16,7 +16,7 @@ let winPattern=[
     [2,4,6],
 ];
 boxes.forEach((btn)=>{
-    btn.addEventListener("click",()=>{
+    btn.addEventListener("touchstart",()=>{
 
         if(turno){
 btn.innerHTML="<span style='color:black;'>O</span>"
@@ -77,5 +77,5 @@ showWinner(pos1Val);
 
 
 
-newGame.addEventListener("click",resetGame)
-resetBtn.addEventListener("click",resetGame)
+newGame.addEventListener("touchstart",resetGame)
+resetBtn.addEventListener("touchstart",resetGame)
